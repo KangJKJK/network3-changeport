@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WG_CONFIG="/root/ubuntu-node/x86_64/wg0.conf"
+WG_CONFIG="/root/ubuntu-node/wg0.conf"
 DEFAULT_PORT1=1433
 DEFAULT_PORT2=51820
 CURRENT_PORT1=$DEFAULT_PORT1
