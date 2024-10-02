@@ -20,7 +20,7 @@ done
 echo -e "${GREEN}사용 가능한 포트는 $CURRENT_PORT1 와 $CURRENT_PORT2 입니다.${NC}"
 
 # wg0.conf 파일의 ListenPort 값을 변경
-if [ -f "$WG_CONFIG" ]; then
+if [ -f "$WG_CONFIG" ];then
   sudo sed -i "s/^ListenPort *=.*/ListenPort = $CURRENT_PORT1/" "$WG_CONFIG"
   sudo sed -i "s/^ListenPort *=.*/ListenPort = $CURRENT_PORT2/" "$WG_CONFIG"
   echo -e "${GREEN}ListenPort1를 $CURRENT_PORT1 로, ListenPort2를 $CURRENT_PORT2 로 변경했습니다.${NC}"
