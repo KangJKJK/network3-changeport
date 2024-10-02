@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "포트 변경 스크립트가 실행되었습니다."
+
 WG_CONFIG="/root/ubuntu-node/wg0.conf"
 DEFAULT_PORT1=1433
 DEFAULT_PORT2=51820
